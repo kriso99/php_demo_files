@@ -12,8 +12,8 @@ if ($username2 == $username) {
 		echo "Welcome, $username!";
 	} else {
 		echo "Wrong password!";
-	}
+	}//end if password
 } else {
 	echo "Wrong username!";
-}
+}//end if username
 
