@@ -18,8 +18,8 @@ else{
 //city_name!!! same as in the DB!!!	
 	$city_name = $_POST['city_name'];
 		//you can shorten var names - $insert_query - $q or smth else
-	$insert_query = "INSERT INTO cities (city_name) 
-			VALUES ('$city_name')";
+	$insert_query = 	"INSERT INTO cities (city_name) 
+						VALUES ('$city_name')";
 			//or $result
 			$insert_result= mysqli_query($conn, $insert_query);
 

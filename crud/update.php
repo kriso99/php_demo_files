@@ -38,7 +38,10 @@ if(empty($_POST['submit'])){
 	$city_name = $_POST['city_name'];
 
 
-	$update_query = "UPDATE cities SET city_name ='$city_name' WHERE id_city=$id_city";
+	$update_query = "UPDATE cities 
+					SET city_name ='$city_name' 
+					WHERE id_city=$id_city";
+					
 	$update_result= mysqli_query($conn, $update_query);
 
 	if ($update_result) {

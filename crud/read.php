@@ -8,7 +8,10 @@ $conn = mysqli_connect('localhost', 'root', '', 'hotels');
 // 	} else {
 // 	echo "Connected successfully !";
 // 	}
-$read_query = "SELECT * FROM cities WHERE date_deleted IS NULL";
+
+$read_query = 	"SELECT * FROM cities 
+				WHERE date_deleted IS NULL";
+
 $read_result = mysqli_query($conn, $read_query);
 
 //or table
