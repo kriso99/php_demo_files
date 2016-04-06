@@ -25,7 +25,9 @@ if(empty($_POST['submit'])){
 	
 	if (mysqli_num_rows($res) > 0) {
 		while($row = mysqli_fetch_assoc($res)){ 
+			var_dump($row);
 			echo '<option value="'.$row['id_city'].'"';
+			
 			if($row['city_name']==='--'){echo 'selected="--"';}
 
 			echo '>'.$row['city_name'].'</option>';
